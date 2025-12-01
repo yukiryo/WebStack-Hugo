@@ -53,6 +53,12 @@
           url: ttps://tieba.baidu.com/index.html
           description: 百度贴吧。
 
+    - term: 原神 Genshin Impact
+      links:
+        - title: 原神官网
+          url: https://genshin.hoyoverse.com/
+          description: 原神官方网站。
+
    
       
 - taxonomy: 素材资源
