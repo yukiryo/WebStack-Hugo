@@ -1,177 +1,265 @@
 ---
 
-- taxonomy: 常用推荐
-  icon: far fa-star
-  links: 
-    - title: 语雀
-      logo: 语雀.webp
-      url: https://www.yuque.com/
-      description: 专业的云端知识库。
-
-
-
-- taxonomy: 科研办公
-  icon: fas fa-flask fa-lg
+- taxonomy: 游戏
+  icon: fas fa-gamepad fa-lg
   list:
-    - term: 生物信息
+    - term: 原神相关
       links:
-        - title: NCBI
-          logo: ncbi.jpg
-          url: https://www.ncbi.nlm.nih.gov/
-          description: National Center for Biotechnology Information.
+        - title: 仙灵 - 原神规划助手
+          url: https://seelie.inmagi.com/
 
-    - term: 云服务器
+        - title: 椰羊cocogoat
+          url: https://cocogoat.work/
+
+        - title: 原神社区-米游社
+          url: https://bbs.mihoyo.com/ys/
+
+        - title: Honey Impact | Honey Impact - Genshin Impact DB and Tools
+          url: https://genshin.honeyhunterworld.com/?lang=CHS
+
+        - title: 首页 | 莫娜占卜铺
+          url: https://mona-uranai.com/intro
+
+        - title: Genshin Optimizer
+          url: https://frzyc.github.io/genshin-optimizer/#/
+
+        - title: Paimon.moe
+          url: https://paimon.moe/
+
+        - title: 崩坏3攻略站-月光社
+          url: https://bh3.mihoyo.com/gl/
+
+        - title: 原神祈愿模拟器
+          url: https://wishsimulator.app/
+
+        - title: "Honkai: Star Rail Warp Simulator"
+          url: https://hsr.wishsimulator.app/
+
+        - title: 原神角色面板卡 | Enka.Network
+          url: https://enka.network/
+
+    - term: Steam相关
       links:
-        - title: 阿里云
-          logo: 阿里云.jpg
-          url: https://www.aliyun.com/
-          description: 上云就上阿里云。
+        - title: SteamDB
+          url: https://steamdb.info/
 
-    - term: 办公学习
+        - title: 试试换饰品吧 - MoeUB
+          url: https://next.moeub.cn/cs2
+
+        - title: God Zone | 又一个玩家聚集地
+          url: https://csgod.top/
+
+        - title: 挂刀行情站
+          url: https://steam.iflow.work/
+
+        - title: CSOB | 首页
+          url: https://cs2ob.cn/
+
+    - term: 其他游戏
       links:
-        - title: 有道词典
-          logo: 有道词典.png
-          url: https://www.youdao.com/
-          description: 免费，即时的多语种在线翻译。
+        - title: NGA玩家社区
+          url: https://bbs.nga.cn/
 
-        
+        - title: 黑塔 Space
+          url: https://herta.space/
 
-- taxonomy: 悠闲娱乐
-  icon: fas fa-film fa-lg
-  list:
-    - term: 影音视频
+        - title: 首页 - PRTS - 玩家自由构筑的明日方舟中文Wiki
+          url: https://prts.wiki/w/%E9%A6%96%E9%A1%B5
+
+        - title: 明日方舟材料获取一图流
+          url: https://ark.yituliu.cn/
+
+        - title: MAA Copilot
+          url: https://prts.plus/
+
+        - title: 明日方舟寻访记录分析
+          url: https://arkgacha.kwer.top/
+
+        - title: 明日方舟工具箱
+          url: https://arknbak.lolicon.app/#/
+
+        - title: Minecraft用户名和皮肤查询 – NameMC
+          url: https://zh-cn.namemc.com/
+
+        - title: MC百科|最大的MineCraft中文模组百科
+          url: http://www.mcmod.cn/
+
+        - title: 中文Minecraft Wiki - 最详细的官方我的世界百科
+          url: https://zh.minecraft.wiki/
+
+        - title: 植物僵尸相关下载
+          url: http://jspvz.com/download.htm
+
+        - title: Switch520
+          url: https://sway.office.com/1ESaLEE3x47BTgZC
+
+        - title: WZGuides
+          url: https://www.wzguides.cn/wz2/gunsmith
+
+        - title: Warzone META Loadouts, Camo Trackers, Interactive Maps - WZHUB
+          url: https://wzhub.gg/
+
+        - title: 三角洲行动一图流
+          url: https://www.kkrb.net/
+
+        - title: 三角洲小涛查-三角洲经济学，三角洲攻略站-三角洲行动助手-acgice_B站Orzice | 三角洲小涛查
+          url: https://www.acgice.com/sjz/
+
+        - title: 主页 - 鲲 Galgame 论坛 🐳 开源 Galgame 网站
+          url: https://www.kungal.com/
+
+        - title: WZGuides
+          url: https://www.wzguides.cn/
+
+    - term: 游戏工具
       links:
-        - title: 腾讯视频
-          logo: 腾讯视频.png
-          url: http://v.qq.com/
-          description: 腾讯视频，海量视频在线观看。
+        - title: 非小酋
+          url: https://feixiaoqiu.com/
 
-    - term: 游戏竞技
-      links:
-        - title: 百度贴吧
-          logo: 百度贴吧.jpg
-          url: ttps://tieba.baidu.com/index.html
-          description: 百度贴吧。
+        - title: FLiNG Trainer - PC 游戏作弊器和修改器 --- FLiNG Trainer - PC Game Cheats and Mods
+          url: https://flingtrainer.com/
 
-    - term: 原神 Genshin Impact
-      links:
-        - title: 原神官网
-          url: https://genshin.hoyoverse.com/
-          description: 原神官方网站。
+        - title: Liquipedia
+          url: https://liquipedia.net/
 
-   
-      
-- taxonomy: 素材资源
-  icon: far fa-folder-open fa-lg
-  list:
-    - term: 网盘资源
-      links:
-        - title: 百度网盘
-          logo: 百度网盘.jpg
-          url: http://pan.baidu.com/
-          description: https://pan.baidu.com/.
-
-    - term: 图标素材
-      links:
-        - title: Iconfinder
-          logo: Iconfinder.png
-          url: https://www.iconfinder.com
-          description: 2,100,000+ free and premium vector icons.
-
-    - term: 图标设计
-      links:
-        - title: Iconsfeed
-          logo: iconsfeed.png
-          url: http://www.iconsfeed.com/
-          description: iOS icons gallery.
-
-    - term: 平面素材
-      links:
-        - title: freepik
-          logo: freepik.png
-          url: https://www.freepik.com/
-          description: More than a million free vectors, PSD, photos and free icons.
-
- 
-    - term: 字体资源
-      links:
-        - title: Google Font
-          url: https://fonts.google.com/
-          logo: googlefont.png
-          description: Making the web more beautiful, fast, and open through great typography.
-
-      
-
-- taxonomy: 开发设计
+- taxonomy: 工具
   icon: fas fa-tools fa-lg
-  list: 
-    - term: 图形创意
+  list:
+    - term: 开发工具
       links:
-        - title: photoshop
-          url: https://www.adobe.com/cn/products/photoshop.html
-          logo: photoshop.png
-          description: Photoshop不需要解释
-
-    - term: 界面设计
-      links:
-        - title: Sketch
-          url: https://sketchapp.com/
-          logo: sketchapp.png
-          description: The digital design toolkit
-
-    - term: 在线配色
-      links:
-        - title: khroma
-          url: http://khroma.co/generator/
-          logo: khroma.png
-          description: Khroma is the fastest way to discover, search, and save color combos you'll want to use.
+        - title: 代码学院 - Web开发基础教程大全 - www.codexy.cn
+          url: https://www.codexy.cn/
 
     - term: 在线工具
       links:
-        - title: tinypng
-          url: https://tinypng.com/
-          logo: tinypng.png
-          description: Optimize your images with a perfect balance in quality and file size.
+        - title: LDTools - LaodiTeachTips
+          url: https://tool.pc.wiki/
 
-        
-    - term: 谷歌插件
+        - title: IT Tools - Handy online tools for developers
+          url: https://tool.lightnote.com.cn/
+
+        - title: cobalt
+          url: https://cobalt.tools/
+
+        - title: Microsoft Activation Scripts (MAS) | MAS
+          url: https://massgrave.dev/
+
+        - title: MikuTools - 一个轻量的工具集合
+          url: https://imiku.netlify.app/
+
+        - title: 高精度IP地址归属地查询-IP风控值查询-原生IP查询-IP类型查询-家庭宽带IP查询-全球小鸡监控平台
+          url: https://www.ping0.cc/
+
+    - term: 浏览器扩展
       links:
-        - title: wappalyzer
-          url: https://www.wappalyzer.com/
-          logo: wappalyzer.png
-          description: Identify technology on websites.
+        - title: 用户脚本列表 - ScriptCat
+          url: https://scriptcat.org/search
 
+        - title: Greasy Fork - 安全、实用的用户脚本大全
+          url: https://greasyfork.org/zh-CN
 
-
-- taxonomy: 资讯学习
-  icon: fas fa-pencil-alt fa-lg
-  list: 
-    - term: 资讯书籍
+    - term: 其他工具
       links:
-        - title: 微信读书
-          url: https://weread.qq.com/
-          logo: 微信读书.jpg
-          description: 微信读书电脑版。
+        - title: Zeroroku - 数据观测站
+          url: https://zeroroku.com/
 
-    - term: 博客论坛
+        - title: Hakush.in
+          url: https://hakush.in/
+
+        - title: 非线性列车 — By. Juij
+          url: https://juij.fun/#%E7%AB%99%E5%8F%B0%E5%AF%BC%E8%88%AA
+
+- taxonomy: 学习
+  icon: fas fa-book fa-lg
+  list:
+    - term: 知识库
       links:
-        - title: Inoreader
-          url: https://www.inoreader.com/
-          logo: inoreader.jpg
-          description: 重新掌控你的新闻订阅源。
+        - title: 书伴 – 为静心阅读而生
+          url: https://bookfere.com/
 
-    - term: 设计规范
+    - term: 教程
       links:
-        - title: Design Guidelines
-          url: http://designguidelines.co/
-          logo: designguidelines.png
-          description: Design Guidelines &mdash; The way products are built.
+        - title: 整合包教程
+          url: https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/xyyqrfwiu3e2bgyk?singleDoc#
 
-    - term: 视频教程
+- taxonomy: 娱乐
+  icon: fas fa-film fa-lg
+  list:
+    - term: 视频
       links:
-        - title: Photoshop Lady
-          url: http://www.photoshoplady.com/
-          logo: PhotoshopLady.png
-          description: Your Favourite Photoshop Tutorials in One Place.
+        - title: bilibili
+          url: http://www.bilibili.com/
 
-        
+        - title: VTBs in bilibili!
+          url: https://vtbs.moe/
+
+        - title: 开播设置 - 个人中心 - bilibili link
+          url: https://link.bilibili.com/p/center/index#/my-room/start-live
+
+        - title: 地址发布
+          url: https://www.libvio.app/
+
+        - title: 麦田影院-地址发布页，收藏我回家不迷路！
+          url: https://mtyy.tv/
+
+    - term: 漫画
+      links:
+        - title: Kmoe [Kindle漫畫|Kobo漫畫|epub漫畫] [kxo.moe]
+          url: https://kxo.moe/
+
+    - term: 其他娱乐
+      links:
+        - title: 南+ South Plus - powered by Pu!mdHd
+          url: https://www.spring-plus.net/
+
+        - title: SuSu's Share – 分享资源
+          url: https://susuifa.com/
+
+        - title: ＊MioBT＊
+          url: http://www.miobt.com/
+
+        - title: Kemono
+          url: https://kemono.su/
+
+        - title: Explore your sexuality! - Milovana.com
+          url: https://milovana.com/
+
+        - title: 硬核指南 - 够高清才是真硬核！
+          url: https://yinghezhinan.com/
+
+        - title: flysheep资源避难所-一个免费的二次元风格下载站
+          url: https://www.flysheep6.com/
+
+- taxonomy: 其他
+  icon: fas fa-ellipsis-h fa-lg
+  links:
+    - title: 蜜柑计划 - Mikan Project
+      url: https://mikanani.me/
+
+    - title: 企鹅物流数据统计
+      url: https://penguin-stats.cn/
+
+    - title: 字幕库(zimuku) -- 字幕下载网站
+      url: https://zmk.pw/
+
+    - title: 碧蓝档案【蔚蓝档案】“国服”全角色细评 [1.18更新]（持续更新，推荐收藏与分享）_碧蓝档案wiki|GameKee
+      url: https://www.gamekee.com/ba/596660.html
+
+    - title: 导航蟹 | 超横的网址导航
+      url: https://daohangxie.com/#term-3428
+
+    - title: 24h Book search - Download ebooks free with AI
+      url: https://24hbook.daohangxie.com/
+
+    - title: 机佬导航 - 纯净的上网导航站
+      url: http://www.jldzz.cn/
+
+    - title: 主页 | 咸鱼头潜艇
+      url: https://huxiabao.xyz/
+
+    - title: 晨钟网络科技 - 致力于开发小众实用软件
+      url: https://jamcz.com/
+
+    - title: 墨鱼导航
+      url: https://ddgksf2013.top/webs/
+
