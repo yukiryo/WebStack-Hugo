@@ -4,31 +4,16 @@
 body,
 html {
     font-size: 16px;
-    /* 增大基准字号 */
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     line-height: 1.6;
-    /* 动态渐变背景 */
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    /* 简洁背景 */
+    background: #f5f6f7;
     min-height: 100vh;
 }
-
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+}
 }
 
 /* 覆盖现有主要背景，让 body 背景透出来 */
