@@ -1,339 +1,263 @@
----
-
 - taxonomy: 游戏
   icon: fas fa-gamepad fa-lg
   list:
-    - term: 原神相关
-      links:
-        - title: 仙灵 - 原神规划助手
-          url: https://seelie.inmagi.com/
-          logo: default.webp
-
-        - title: 椰羊cocogoat
-          url: https://cocogoat.work/
-          logo: default.webp
-
-        - title: 原神社区-米游社
-          url: https://bbs.mihoyo.com/ys/
-          logo: default.webp
-
-        - title: Honey Impact | Honey Impact - Genshin Impact DB and Tools
-          url: https://genshin.honeyhunterworld.com/?lang=CHS
-          logo: default.webp
-
-        - title: 首页 | 莫娜占卜铺
-          url: https://mona-uranai.com/intro
-          logo: default.webp
-
-        - title: Genshin Optimizer
-          url: https://frzyc.github.io/genshin-optimizer/#/
-          logo: default.webp
-
-        - title: Paimon.moe
-          url: https://paimon.moe/
-          logo: default.webp
-
-        - title: 崩坏3攻略站-月光社
-          url: https://bh3.mihoyo.com/gl/
-          logo: default.webp
-
-        - title: 原神祈愿模拟器
-          url: https://wishsimulator.app/
-          logo: default.webp
-
-        - title: "Honkai: Star Rail Warp Simulator"
-          url: https://hsr.wishsimulator.app/
-          logo: default.webp
-
-        - title: 原神角色面板卡 | Enka.Network
-          url: https://enka.network/
-          logo: default.webp
-
-    - term: Steam相关
-      links:
-        - title: SteamDB
-          url: https://steamdb.info/
-          logo: default.webp
-
-        - title: 试试换饰品吧 - MoeUB
-          url: https://next.moeub.cn/cs2
-          logo: default.webp
-
-        - title: God Zone | 又一个玩家聚集地
-          url: https://csgod.top/
-          logo: default.webp
-
-        - title: 挂刀行情站
-          url: https://steam.iflow.work/
-          logo: default.webp
-
-        - title: CSOB | 首页
-          url: https://cs2ob.cn/
-          logo: default.webp
-
-    - term: 其他游戏
-      links:
-        - title: NGA玩家社区
-          url: https://bbs.nga.cn/
-          logo: default.webp
-
-        - title: 黑塔 Space
-          url: https://herta.space/
-          logo: default.webp
-
-        - title: 首页 - PRTS - 玩家自由构筑的明日方舟中文Wiki
-          url: https://prts.wiki/w/%E9%A6%96%E9%A1%B5
-          logo: default.webp
-
-        - title: 明日方舟材料获取一图流
-          url: https://ark.yituliu.cn/
-          logo: default.webp
-
-        - title: MAA Copilot
-          url: https://prts.plus/
-          logo: default.webp
-
-        - title: 明日方舟寻访记录分析
-          url: https://arkgacha.kwer.top/
-          logo: default.webp
-
-        - title: 明日方舟工具箱
-          url: https://arknbak.lolicon.app/#/
-          logo: default.webp
-
-        - title: Minecraft用户名和皮肤查询 – NameMC
-          url: https://zh-cn.namemc.com/
-          logo: default.webp
-
-        - title: MC百科|最大的MineCraft中文模组百科
-          url: http://www.mcmod.cn/
-          logo: default.webp
-
-        - title: 中文Minecraft Wiki - 最详细的官方我的世界百科
-          url: https://zh.minecraft.wiki/
-          logo: default.webp
-
-        - title: 植物僵尸相关下载
-          url: http://jspvz.com/download.htm
-          logo: default.webp
-
-        - title: Switch520
-          url: https://sway.office.com/1ESaLEE3x47BTgZC
-          logo: default.webp
-
-        - title: WZGuides
-          url: https://www.wzguides.cn/wz2/gunsmith
-          logo: default.webp
-
-        - title: Warzone META Loadouts, Camo Trackers, Interactive Maps - WZHUB
-          url: https://wzhub.gg/
-          logo: default.webp
-
-        - title: 三角洲行动一图流
-          url: https://www.kkrb.net/
-          logo: default.webp
-
-        - title: 三角洲小涛查-三角洲经济学，三角洲攻略站-三角洲行动助手-acgice_B站Orzice | 三角洲小涛查
-          url: https://www.acgice.com/sjz/
-          logo: default.webp
-
-        - title: 主页 - 鲲 Galgame 论坛 🐳 开源 Galgame 网站
-          url: https://www.kungal.com/
-          logo: default.webp
-
-        - title: WZGuides
-          url: https://www.wzguides.cn/
-          logo: default.webp
-
-    - term: 游戏工具
-      links:
-        - title: 非小酋
-          url: https://feixiaoqiu.com/
-          logo: default.webp
-
-        - title: FLiNG Trainer - PC 游戏作弊器和修改器 --- FLiNG Trainer - PC Game Cheats and Mods
-          url: https://flingtrainer.com/
-          logo: default.webp
-
-        - title: Liquipedia
-          url: https://liquipedia.net/
-          logo: default.webp
-
+  - term: 原神相关
+    links:
+    - title: 仙灵 - 原神规划助手
+      url: https://seelie.inmagi.com/
+      logo: 仙灵_-_原神规划助手.ico
+    - title: 椰羊cocogoat
+      url: https://cocogoat.work/
+      logo: 椰羊cocogoat.ico
+    - title: 原神社区-米游社
+      url: https://bbs.mihoyo.com/ys/
+      logo: 原神社区-米游社.ico
+    - title: Honey Impact | Honey Impact - Genshin Impact DB and Tools
+      url: https://genshin.honeyhunterworld.com/?lang=CHS
+      logo: default.webp
+    - title: 首页 | 莫娜占卜铺
+      url: https://mona-uranai.com/intro
+      logo: default.webp
+    - title: Genshin Optimizer
+      url: https://frzyc.github.io/genshin-optimizer/#/
+      logo: default.webp
+    - title: Paimon.moe
+      url: https://paimon.moe/
+      logo: default.webp
+    - title: 崩坏3攻略站-月光社
+      url: https://bh3.mihoyo.com/gl/
+      logo: default.webp
+    - title: 原神祈愿模拟器
+      url: https://wishsimulator.app/
+      logo: default.webp
+    - title: 'Honkai: Star Rail Warp Simulator'
+      url: https://hsr.wishsimulator.app/
+      logo: default.webp
+    - title: 原神角色面板卡 | Enka.Network
+      url: https://enka.network/
+      logo: default.webp
+  - term: Steam相关
+    links:
+    - title: SteamDB
+      url: https://steamdb.info/
+      logo: default.webp
+    - title: 试试换饰品吧 - MoeUB
+      url: https://next.moeub.cn/cs2
+      logo: default.webp
+    - title: God Zone | 又一个玩家聚集地
+      url: https://csgod.top/
+      logo: default.webp
+    - title: 挂刀行情站
+      url: https://steam.iflow.work/
+      logo: default.webp
+    - title: CSOB | 首页
+      url: https://cs2ob.cn/
+      logo: default.webp
+  - term: 其他游戏
+    links:
+    - title: NGA玩家社区
+      url: https://bbs.nga.cn/
+      logo: default.webp
+    - title: 黑塔 Space
+      url: https://herta.space/
+      logo: default.webp
+    - title: 首页 - PRTS - 玩家自由构筑的明日方舟中文Wiki
+      url: https://prts.wiki/w/%E9%A6%96%E9%A1%B5
+      logo: default.webp
+    - title: 明日方舟材料获取一图流
+      url: https://ark.yituliu.cn/
+      logo: default.webp
+    - title: MAA Copilot
+      url: https://prts.plus/
+      logo: default.webp
+    - title: 明日方舟寻访记录分析
+      url: https://arkgacha.kwer.top/
+      logo: default.webp
+    - title: 明日方舟工具箱
+      url: https://arknbak.lolicon.app/#/
+      logo: default.webp
+    - title: Minecraft用户名和皮肤查询 – NameMC
+      url: https://zh-cn.namemc.com/
+      logo: default.webp
+    - title: MC百科|最大的MineCraft中文模组百科
+      url: http://www.mcmod.cn/
+      logo: default.webp
+    - title: 中文Minecraft Wiki - 最详细的官方我的世界百科
+      url: https://zh.minecraft.wiki/
+      logo: default.webp
+    - title: 植物僵尸相关下载
+      url: http://jspvz.com/download.htm
+      logo: default.webp
+    - title: Switch520
+      url: https://sway.office.com/1ESaLEE3x47BTgZC
+      logo: default.webp
+    - title: WZGuides
+      url: https://www.wzguides.cn/wz2/gunsmith
+      logo: default.webp
+    - title: Warzone META Loadouts, Camo Trackers, Interactive Maps - WZHUB
+      url: https://wzhub.gg/
+      logo: default.webp
+    - title: 三角洲行动一图流
+      url: https://www.kkrb.net/
+      logo: default.webp
+    - title: 三角洲小涛查-三角洲经济学，三角洲攻略站-三角洲行动助手-acgice_B站Orzice | 三角洲小涛查
+      url: https://www.acgice.com/sjz/
+      logo: default.webp
+    - title: 主页 - 鲲 Galgame 论坛 🐳 开源 Galgame 网站
+      url: https://www.kungal.com/
+      logo: default.webp
+    - title: WZGuides
+      url: https://www.wzguides.cn/
+      logo: default.webp
+  - term: 游戏工具
+    links:
+    - title: 非小酋
+      url: https://feixiaoqiu.com/
+      logo: default.webp
+    - title: FLiNG Trainer - PC 游戏作弊器和修改器 --- FLiNG Trainer - PC Game Cheats and Mods
+      url: https://flingtrainer.com/
+      logo: default.webp
+    - title: Liquipedia
+      url: https://liquipedia.net/
+      logo: default.webp
 - taxonomy: 工具
   icon: fas fa-tools fa-lg
   list:
-    - term: 开发工具
-      links:
-        - title: 代码学院 - Web开发基础教程大全 - www.codexy.cn
-          url: https://www.codexy.cn/
-          logo: default.webp
-
-    - term: 在线工具
-      links:
-        - title: LDTools - LaodiTeachTips
-          url: https://tool.pc.wiki/
-          logo: default.webp
-
-        - title: IT Tools - Handy online tools for developers
-          url: https://tool.lightnote.com.cn/
-          logo: default.webp
-
-        - title: cobalt
-          url: https://cobalt.tools/
-          logo: default.webp
-
-        - title: Microsoft Activation Scripts (MAS) | MAS
-          url: https://massgrave.dev/
-          logo: default.webp
-
-        - title: MikuTools - 一个轻量的工具集合
-          url: https://imiku.netlify.app/
-          logo: default.webp
-
-        - title: 高精度IP地址归属地查询-IP风控值查询-原生IP查询-IP类型查询-家庭宽带IP查询-全球小鸡监控平台
-          url: https://www.ping0.cc/
-          logo: default.webp
-
-    - term: 浏览器扩展
-      links:
-        - title: 用户脚本列表 - ScriptCat
-          url: https://scriptcat.org/search
-          logo: default.webp
-
-        - title: Greasy Fork - 安全、实用的用户脚本大全
-          url: https://greasyfork.org/zh-CN
-          logo: default.webp
-
-    - term: 其他工具
-      links:
-        - title: Zeroroku - 数据观测站
-          url: https://zeroroku.com/
-          logo: default.webp
-
-        - title: Hakush.in
-          url: https://hakush.in/
-          logo: default.webp
-
-        - title: 非线性列车 — By. Juij
-          url: https://juij.fun/#%E7%AB%99%E5%8F%B0%E5%AF%BC%E8%88%AA
-          logo: default.webp
-
+  - term: 开发工具
+    links:
+    - title: 代码学院 - Web开发基础教程大全 - www.codexy.cn
+      url: https://www.codexy.cn/
+      logo: default.webp
+  - term: 在线工具
+    links:
+    - title: LDTools - LaodiTeachTips
+      url: https://tool.pc.wiki/
+      logo: default.webp
+    - title: IT Tools - Handy online tools for developers
+      url: https://tool.lightnote.com.cn/
+      logo: default.webp
+    - title: cobalt
+      url: https://cobalt.tools/
+      logo: default.webp
+    - title: Microsoft Activation Scripts (MAS) | MAS
+      url: https://massgrave.dev/
+      logo: default.webp
+    - title: MikuTools - 一个轻量的工具集合
+      url: https://imiku.netlify.app/
+      logo: default.webp
+    - title: 高精度IP地址归属地查询-IP风控值查询-原生IP查询-IP类型查询-家庭宽带IP查询-全球小鸡监控平台
+      url: https://www.ping0.cc/
+      logo: default.webp
+  - term: 浏览器扩展
+    links:
+    - title: 用户脚本列表 - ScriptCat
+      url: https://scriptcat.org/search
+      logo: default.webp
+    - title: Greasy Fork - 安全、实用的用户脚本大全
+      url: https://greasyfork.org/zh-CN
+      logo: default.webp
+  - term: 其他工具
+    links:
+    - title: Zeroroku - 数据观测站
+      url: https://zeroroku.com/
+      logo: default.webp
+    - title: Hakush.in
+      url: https://hakush.in/
+      logo: default.webp
+    - title: 非线性列车 — By. Juij
+      url: https://juij.fun/#%E7%AB%99%E5%8F%B0%E5%AF%BC%E8%88%AA
+      logo: default.webp
 - taxonomy: 学习
   icon: fas fa-book fa-lg
   list:
-    - term: 知识库
-      links:
-        - title: 书伴 – 为静心阅读而生
-          url: https://bookfere.com/
-          logo: default.webp
-
-    - term: 教程
-      links:
-        - title: 整合包教程
-          url: https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/xyyqrfwiu3e2bgyk?singleDoc#
-          logo: default.webp
-
+  - term: 知识库
+    links:
+    - title: 书伴 – 为静心阅读而生
+      url: https://bookfere.com/
+      logo: default.webp
+  - term: 教程
+    links:
+    - title: 整合包教程
+      url: https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/xyyqrfwiu3e2bgyk?singleDoc#
+      logo: default.webp
 - taxonomy: 娱乐
   icon: fas fa-film fa-lg
   list:
-    - term: 视频
-      links:
-        - title: bilibili
-          url: http://www.bilibili.com/
-          logo: default.webp
-
-        - title: VTBs in bilibili!
-          url: https://vtbs.moe/
-          logo: default.webp
-
-        - title: 开播设置 - 个人中心 - bilibili link
-          url: https://link.bilibili.com/p/center/index#/my-room/start-live
-          logo: default.webp
-
-        - title: 地址发布
-          url: https://www.libvio.app/
-          logo: default.webp
-
-        - title: 麦田影院-地址发布页，收藏我回家不迷路！
-          url: https://mtyy.tv/
-          logo: default.webp
-
-    - term: 漫画
-      links:
-        - title: Kmoe [Kindle漫畫|Kobo漫畫|epub漫畫] [kxo.moe]
-          url: https://kxo.moe/
-          logo: default.webp
-
-    - term: 其他娱乐
-      links:
-        - title: 南+ South Plus - powered by Pu!mdHd
-          url: https://www.spring-plus.net/
-          logo: default.webp
-
-        - title: SuSu's Share – 分享资源
-          url: https://susuifa.com/
-          logo: default.webp
-
-        - title: ＊MioBT＊
-          url: http://www.miobt.com/
-          logo: default.webp
-
-        - title: Kemono
-          url: https://kemono.su/
-          logo: default.webp
-
-        - title: Explore your sexuality! - Milovana.com
-          url: https://milovana.com/
-          logo: default.webp
-
-        - title: 硬核指南 - 够高清才是真硬核！
-          url: https://yinghezhinan.com/
-          logo: default.webp
-
-        - title: flysheep资源避难所-一个免费的二次元风格下载站
-          url: https://www.flysheep6.com/
-          logo: default.webp
-
+  - term: 视频
+    links:
+    - title: bilibili
+      url: http://www.bilibili.com/
+      logo: default.webp
+    - title: VTBs in bilibili!
+      url: https://vtbs.moe/
+      logo: default.webp
+    - title: 开播设置 - 个人中心 - bilibili link
+      url: https://link.bilibili.com/p/center/index#/my-room/start-live
+      logo: default.webp
+    - title: 地址发布
+      url: https://www.libvio.app/
+      logo: default.webp
+    - title: 麦田影院-地址发布页，收藏我回家不迷路！
+      url: https://mtyy.tv/
+      logo: default.webp
+  - term: 漫画
+    links:
+    - title: Kmoe [Kindle漫畫|Kobo漫畫|epub漫畫] [kxo.moe]
+      url: https://kxo.moe/
+      logo: default.webp
+  - term: 其他娱乐
+    links:
+    - title: 南+ South Plus - powered by Pu!mdHd
+      url: https://www.spring-plus.net/
+      logo: default.webp
+    - title: SuSu's Share – 分享资源
+      url: https://susuifa.com/
+      logo: default.webp
+    - title: ＊MioBT＊
+      url: http://www.miobt.com/
+      logo: default.webp
+    - title: Kemono
+      url: https://kemono.su/
+      logo: default.webp
+    - title: Explore your sexuality! - Milovana.com
+      url: https://milovana.com/
+      logo: default.webp
+    - title: 硬核指南 - 够高清才是真硬核！
+      url: https://yinghezhinan.com/
+      logo: default.webp
+    - title: flysheep资源避难所-一个免费的二次元风格下载站
+      url: https://www.flysheep6.com/
+      logo: default.webp
 - taxonomy: 其他
   icon: fas fa-ellipsis-h fa-lg
   links:
-    - title: 蜜柑计划 - Mikan Project
-      url: https://mikanani.me/
-      logo: default.webp
-
-    - title: 企鹅物流数据统计
-      url: https://penguin-stats.cn/
-      logo: default.webp
-
-    - title: 字幕库(zimuku) -- 字幕下载网站
-      url: https://zmk.pw/
-      logo: default.webp
-
-    - title: 碧蓝档案【蔚蓝档案】“国服”全角色细评 [1.18更新]（持续更新，推荐收藏与分享）_碧蓝档案wiki|GameKee
-      url: https://www.gamekee.com/ba/596660.html
-      logo: default.webp
-
-    - title: 导航蟹 | 超横的网址导航
-      url: https://daohangxie.com/#term-3428
-      logo: default.webp
-
-    - title: 24h Book search - Download ebooks free with AI
-      url: https://24hbook.daohangxie.com/
-      logo: default.webp
-
-    - title: 机佬导航 - 纯净的上网导航站
-      url: http://www.jldzz.cn/
-      logo: default.webp
-
-    - title: 主页 | 咸鱼头潜艇
-      url: https://huxiabao.xyz/
-      logo: default.webp
-
-    - title: 晨钟网络科技 - 致力于开发小众实用软件
-      url: https://jamcz.com/
-      logo: default.webp
-
-    - title: 墨鱼导航
-      url: https://ddgksf2013.top/webs/
-      logo: default.webp
-
+  - title: 蜜柑计划 - Mikan Project
+    url: https://mikanani.me/
+    logo: default.webp
+  - title: 企鹅物流数据统计
+    url: https://penguin-stats.cn/
+    logo: default.webp
+  - title: 字幕库(zimuku) -- 字幕下载网站
+    url: https://zmk.pw/
+    logo: default.webp
+  - title: 碧蓝档案【蔚蓝档案】“国服”全角色细评 [1.18更新]（持续更新，推荐收藏与分享）_碧蓝档案wiki|GameKee
+    url: https://www.gamekee.com/ba/596660.html
+    logo: default.webp
+  - title: 导航蟹 | 超横的网址导航
+    url: https://daohangxie.com/#term-3428
+    logo: default.webp
+  - title: 24h Book search - Download ebooks free with AI
+    url: https://24hbook.daohangxie.com/
+    logo: default.webp
+  - title: 机佬导航 - 纯净的上网导航站
+    url: http://www.jldzz.cn/
+    logo: default.webp
+  - title: 主页 | 咸鱼头潜艇
+    url: https://huxiabao.xyz/
+    logo: default.webp
+  - title: 晨钟网络科技 - 致力于开发小众实用软件
+    url: https://jamcz.com/
+    logo: default.webp
+  - title: 墨鱼导航
+    url: https://ddgksf2013.top/webs/
+    logo: default.webp
