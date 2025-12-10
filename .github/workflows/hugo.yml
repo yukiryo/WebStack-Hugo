@@ -5,6 +5,9 @@ on:
     branches:
       - main  # 这里的意思是当 main 分支发生 push 的时候，运行下面的 jobs
 
+permissions:
+  contents: write
+
 jobs:
   deploy: 
     runs-on: ubuntu-latest 	# 在什么环境运行任务
