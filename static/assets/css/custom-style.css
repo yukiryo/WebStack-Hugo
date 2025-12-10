@@ -1,209 +1,249 @@
-/* 全局字体优化 - Apple System / Modern Fonts */
+/* ==========================================================================
+   RESET & BASE TYPOGRAPHY
+   ========================================================================== */
 body,
 html {
-    font-size: 15px;
-    /* 稍微增加基础字号 */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    /* 增大基准字号 */
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    /* 让字体在 Mac 上更清晰 */
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    line-height: 1.6;
+    /* 动态渐变背景 */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
 }
 
-/* ==========================================================================
-   布局与间距 (Layout & Spacing)
-   ========================================================================== */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
 
-/* 模块标题间距 */
-.io-title,
-.panel-heading {
-    margin-top: 40px !important;
-    /* 模块之间增加间距 */
-    margin-bottom: 25px !important;
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-/* 第一个模块不需要顶部间距 */
-.io-title:first-child {
-    margin-top: 20px !important;
-}
-
-/* 卡片容器对齐 */
-.row.io-mx-n2 {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.row.io-mx-n2>[class*='col-'] {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* 确保卡片网格对齐 */
-.url-body {
-    padding: 0 15px;
-}
-
-/* ==========================================================================
-   卡片设计现代化 (Card Design Modernization)
-   ========================================================================== */
-
-/* 网址导航卡片 */
-.url-card {
-    border-radius: 12px;
-    /* 圆角增加 */
-    border: 1px solid rgba(0, 0, 0, 0.03);
-    /* 极淡边框 */
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-    /* 柔和阴影 */
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    /* 平滑过渡动画 */
-    background: #fff;
-    overflow: hidden;
-    margin-bottom: 30px;
-    /* 增加卡片底部间距到 30px */
-}
-
-/* 悬停效果 - 上浮 + 阴影加深 */
-.url-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    /* 悬停时加深阴影 */
-    z-index: 2;
-}
-
-/* 卡片内部链接区域 */
-.url-card a.card {
-    border: none !important;
-    /* 移除默认边框 */
+/* 覆盖现有主要背景，让 body 背景透出来 */
+.page-container,
+.main-content {
     background: transparent !important;
 }
 
-/* 图标圆角 */
-.url-card .url-img>img {
-    border-radius: 12px;
-    /* 从 20% 改为统一的圆角 */
-    transition: transform 0.3s ease;
+/* ==========================================================================
+   LAYOUT & GRID (布局重构)
+   ========================================================================== */
+
+/* 主内容区域增加边距，营造悬浮感 */
+.main-content {
+    padding: 40px !important;
 }
 
-.url-card:hover .url-img>img {
-    transform: scale(1.05);
-    /* 图标微缩放 */
+/* 模块标题 */
+.io-title h4,
+.text-gray,
+h4.text-gray {
+    color: rgba(255, 255, 255, 0.95) !important;
+    /* 深色背景下白色文字 */
+    font-weight: 700 !important;
+    font-size: 1.5rem !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px !important;
+    margin-top: 50px !important;
+    display: flex;
+    align-items: center;
 }
 
-/* 标题样式 */
-.url-card .url-info strong {
+/* 图标优化 */
+.site-tag {
+    font-size: 1.8rem !important;
+    margin-right: 15px !important;
+    opacity: 0.9;
+}
+
+/* 修复 Bootstrap row 的负边距带来的问题 */
+.row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
+[class*='col-'] {
+    padding: 15px !important;
+    /* 增加栅格间隙 */
+}
+
+
+/* ==========================================================================
+   GLASSMORPHISM CARDS (玻璃拟态卡片)
+   ========================================================================== */
+
+.url-card {
+    background: rgba(255, 255, 255, 0.7) !important;
+    /* 半透明白底 */
+    backdrop-filter: blur(16px) !important;
+    /* 核心：背景模糊 */
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    /* 玻璃边缘高光 */
+    border-radius: 24px !important;
+    /* 超大圆角 */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
+    /* 柔和投影 */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    margin-bottom: 0 !important;
+    /* 由 col padding 控制 */
+    height: 100%;
+}
+
+.url-card .url-body {
+    background: transparent !important;
+    padding: 15px 10px !important;
+}
+
+.url-card a.card {
+    background: transparent !important;
+    border: none !important;
+    margin-bottom: 0 !important;
+}
+
+/* 悬停效果：上浮 + 发光 */
+.url-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 15px 40px 0 rgba(31, 38, 135, 0.25) !important;
+    border-color: #fff !important;
+    z-index: 10;
+}
+
+/* 内容样式 */
+.url-card strong {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.url-card p.text-muted {
+    color: #5d6d7e !important;
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* 图标样式 */
+.url-img img {
+    border-radius: 16px !important;
+    /* 图标圆角 */
+    width: 48px !important;
+    height: 48px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.url-card:hover .url-img img {
+    transform: rotate(10deg);
+    /* 趣味动效 */
+}
+
+/* ==========================================================================
+   SIDEBAR (侧边栏悬浮)
+   ========================================================================== */
+
+.sidebar-menu {
+    background: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-menu-inner a {
+    color: #4a5568 !important;
     font-weight: 600;
-    font-size: 15px;
-    color: #333;
+    transition: all 0.2s;
 }
 
-/* 描述文字颜色 */
-.url-card .url-info p {
-    color: #888;
-    font-size: 13px;
-    margin-top: 5px;
+/* 激活状态和悬停 */
+.sidebar-menu-inner li.active>a,
+.sidebar-menu-inner li>a:hover {
+    background: rgba(255, 255, 255, 0.8) !important;
+    color: #007AFF !important;
+    /* 苹果蓝 */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateX(5px);
 }
 
-/* ==========================================================================
-   侧边栏与导航 (Sidebar & Navigation)
-   ========================================================================== */
-
-/* 左导航悬浮宽度调整 */
-.sidebar-popup.sidebar-menu-inner>div>ul>li.sidebar-item>ul {
-    position: absolute;
-    top: 0px;
-    left: 10px;
-    width: 100px;
-    /* 稍微加宽 */
-    z-index: 99;
-}
-
-.sidebar-popup.sidebar-menu-inner ul,
-.sidebar-popup.sidebar-menu-inner ul li {
-    width: 100px;
-}
-
-/* 隐藏侧边栏滚动条 */
-.sidebar-menu.flex-fill::-webkit-scrollbar {
-    display: none;
-}
-
-/* 左导航二级导航左侧间距 */
-.sidebar-menu-inner ul li ul li a {
-    margin-left: 25px;
-    border-radius: 8px;
-    /* 菜单项圆角 */
-    margin-right: 10px;
-    margin-top: 5px;
-    /* 增加上下间距 */
-    margin-bottom: 5px;
-    padding: 8px 12px;
-    /* 增加内边距让点击区域更大 */
+/* Logo 区域 */
+.logo-site {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* ==========================================================================
-   颜色与背景 (Colors & Backgrounds)
+   HEADER & NAVBAR (顶部导航)
    ========================================================================== */
 
-/* 顶部导航栏 */
-.big-header-banner .page-header {
-    background: rgba(255, 255, 255, 0.95);
-    /* 增加一点不透明度 */
+.page-header {
+    background: rgba(255, 255, 255, 0.3) !important;
+    /* 更加透明 */
     backdrop-filter: blur(10px);
-    /* 玻璃磨砂效果 */
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    border-radius: 0 0 24px 24px;
+    /* 底部圆角 */
 }
 
-.big-header-banner:not(.header-bg) .page-header .navbar-nav>li>a,
-.big-header-banner:not(.header-bg) .navbar-menu a:not(.dropdown-item) {
-    color: #333 !important;
-    /* 默认黑色，不再是白色 */
+/* 顶部链接 */
+.page-header .navbar-nav>li>a {
+    color: #fff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     font-weight: 500;
 }
 
-/* 链接悬停颜色 - 现代蓝色 */
-a:hover,
-.big-header-banner:not(.header-bg) .page-header .navbar-nav>li>a:hover {
-    color: #007AFF !important;
-    text-decoration: none;
-}
-
-/* 主页搜索热词 */
-.search-hot-text {
-    border-radius: 0 0 16px 16px;
-    /* 更大的圆角 */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-    border: 1px solid rgba(0, 0, 0, 0.02);
-}
-
-.search-hot-text ul li.current {
-    background: #f0f7ff;
-    color: #007AFF;
+.page-header .navbar-nav>li>a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
 }
 
 /* ==========================================================================
-   暗黑模式适配 (Dark Mode)
+   DARK MOOD & UTILS (其他)
    ========================================================================== */
 
-.io-black-mode .url-card {
-    background: #2b2b2b;
-    border-color: #333;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+/* 隐藏原来的搜索背景图，我们用全局渐变替代了 */
+#search-bg {
+    background: transparent !important;
+    height: auto !important;
+    padding: 0 !important;
 }
 
-.io-black-mode .url-card .url-info strong {
-    color: #eee;
+/* 隐藏不必要的元素 */
+.main-footer {
+    background: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(5px);
+    color: rgba(255, 255, 255, 0.8);
+    border-top: none;
+    margin-top: 60px;
 }
 
-.io-black-mode .url-card .url-info p {
-    color: #aaa;
-}
+/* 移动端适配调整 */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px !important;
+    }
 
-.io-black-mode .page-header {
-    background: rgba(30, 30, 30, 0.95);
-    border-bottom: 1px solid #333;
-}
+    .url-card {
+        border-radius: 18px !important;
+    }
 
-.io-black-mode .page-container .grid-bg {
-    background-image: none;
-    /* 移除网格背景，保持干净 */
-    background-color: #1a1a1a;
+    .site-tag {
+        /* 移动端减小标题 */
+        font-size: 1.4rem !important;
+    }
 }
