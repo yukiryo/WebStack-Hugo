@@ -33,11 +33,10 @@ html {
 .io-title h4,
 .text-gray,
 h4.text-gray {
-    color: rgba(255, 255, 255, 0.95) !important;
-    /* 深色背景下白色文字 */
+    color: #333 !important;
+    /* 深色文字，浅色背景下可读 */
     font-weight: 700 !important;
     font-size: 1.5rem !important;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px !important;
     margin-top: 50px !important;
     display: flex;
