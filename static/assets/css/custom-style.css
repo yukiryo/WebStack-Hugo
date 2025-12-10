@@ -1,130 +1,150 @@
-/*调整全局字体大小*/
-body,html{font-size:14px;}
+/* 全局字体优化 - Apple System / Modern Fonts */
+body, html {
+    font-size: 15px; /* 稍微增加基础字号 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    -webkit-font-smoothing: antialiased; /* 让字体在 Mac 上更清晰 */
+}
 
-/*左导航悬浮sidebar-menu-inner宽度调整为90px*/
-.sidebar-popup.sidebar-menu-inner > div > ul > li.sidebar-item>ul{position:absolute;top:0px;left:10px;width:90px;z-index:99}
-.sidebar-popup.sidebar-menu-inner ul{width:90px}
-.sidebar-popup.sidebar-menu-inner ul li{width:90px}
+/* ==========================================================================
+   卡片设计现代化 (Card Design Modernization)
+   ========================================================================== */
 
-/*隐藏左导航scrollbar*/
-.sidebar-menu.flex-fill::-webkit-scrollbar{display:none}
-
-/*搜索框搜索图标颜色*/
-#search button i{color:#6C757D;font-size:18px}
-
-/*顶部导航栏字体+图标颜色*/
-.big-header-banner .page-header{color:#ffffff;background:rgba(255,255,255,0);box-shadow:none;transition:color .3s,background-color .3s}
-.big-header-banner:not(.header-bg) .page-header .navbar-nav>li>a,.big-header-banner:not(.header-bg) .navbar-menu a:not(.dropdown-item){color:#ffffff;}
-.big-header-banner:not(.header-bg) .page-header .navbar-nav>li>a:hover,.big-header-banner:not(.header-bg) .navbar-menu a:not(.dropdown-item):hover{color:#dc3545;}
-.big-header-banner:not(.header-bg) .header-mini-btn path{stroke:#ffffff;}
-.big-header-banner:not(.header-bg) .header-mini-btn label:hover path{stroke:#ffffff;}
-
-/*搜索栏字体+背景*/
-.header-big #search-text{color:#6C757D;}
-.io-black-mode .header-big #search-text{color:#fff;}
-
-/*搜索activate图标颜色*/
-.header-big .search-type input:checked+label:before{content:'';border-width:8px 8px 0px 8px;border-style:solid;border-color:#ffffff transparent transparent;position:absolute;left:50%;top:0;margin-left:-8px}
-
-/*主页搜索搜索框(头+底部)字体颜色*/
-.header-big:not(.no-bg) .s-type-list{color:#20c997}
-.header-big:not(.no-bg) .text-muted,.header-big:not(.no-bg) .search-type .menu-item a,.header-big:not(.no-bg) .big-title .h1{color:#ffffff!important}
-
-/*主页header-banner底部宽度*/
-.post-top{padding-bottom:50px}
-
-/*左导航二级导航标题左侧距离*/
-.sidebar-menu-inner ul li ul li a{margin-left:30px;}
-
-/*头部导航二级导航iconfont图标*/
-.navbar-collapse ul li.menu-item-has-children:after{content:'\e612';}
-
-/*搜索部分背景样式*/
-.header-big.css-color{background-size:unset;background-position:unset;animation:unset;}
-
-/*搜索热词样式调整*/
-.search-hot-text{
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    border-radius: 0 0 10px 10px;
-    background: #FFF;
-    box-shadow: 0px 4px 5px 0px #cccccc94;
+/* 网址导航卡片 */
+.url-card {
+    border-radius: 12px; /* 圆角增加 */
+    border: 1px solid rgba(0,0,0,0.03); /* 极淡边框 */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04); /* 柔和阴影 */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* 平滑过渡动画 */
+    background: #fff;
     overflow: hidden;
 }
-.search-hot-text ul{
-    margin: 0;
-    padding: 5px 0;
-}
-.search-hot-text ul li{
-    line-height: 30px;
-    font-size: 14px;
-    padding: 0px 25px;
-    color: #777;
-    cursor: pointer;
-}
-.io-black-mode .search-hot-text ul li{
-    color: #fff;
-}    
-.search-hot-text ul li.current{
-    background: #f1f1f1;
-    color: #2196f3;
-}
-.search-hot-text ul li:hover{
-    background: #f1f1f1;
-    color: #2196f3;
-    cursor: pointer;
-}
-.search-hot-text ul li span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    background: #e5e5e5;
-    margin-right: 10px;
-    border-radius: 10px;
-    color: #999;
+
+/* 悬停效果 - 上浮 + 阴影加深 */
+.url-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* 悬停时加深阴影 */
+    z-index: 2;
 }
 
-footer.main-footer .footer-text {
-    text-align: center;
-}
-footer.main-footer .footer-text a {
-    color: #007bff;
-}
-footer.main-footer .footer-text a:hover {
-    color: red;
+/* 卡片内部链接区域 */
+.url-card a.card {
+    border: none !important; /* 移除默认边框 */
+    background: transparent !important;
 }
 
-/*About页面*/
-.panel .panel-body a {color: #007bff;}
-.panel .panel-body a:hover {color: #979898;}
-
-/*网格背景*/
-.io-grey-mode .page-container .grid-bg {
-    background-image: linear-gradient(rgba(50, 0, 0, 0.05) 1px, transparent 0), linear-gradient(90deg, rgba(50, 0, 0, 0.05) 1px, transparent 0); 
-    background-size: 15px 15px;
-    background-color: #d8d8d8;
-}
-
-/*导航 Logo 图标裁剪边角*/
+/* 图标圆角 */
 .url-card .url-img > img {
-    border-radius: 20%;
+    border-radius: 12px; /* 从 20% 改为统一的圆角 */
+    transition: transform 0.3s ease;
 }
 
+.url-card:hover .url-img > img {
+    transform: scale(1.05); /* 图标微缩放 */
+}
 
+/* 标题样式 */
+.url-card .url-info strong {
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+}
 
+/* 描述文字颜色 */
+.url-card .url-info p {
+    color: #888;
+    font-size: 13px;
+    margin-top: 5px;
+}
 
+/* ==========================================================================
+   侧边栏与导航 (Sidebar & Navigation)
+   ========================================================================== */
 
+/* 左导航悬浮宽度调整 */
+.sidebar-popup.sidebar-menu-inner > div > ul > li.sidebar-item > ul {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 100px; /* 稍微加宽 */
+    z-index: 99;
+}
+.sidebar-popup.sidebar-menu-inner ul,
+.sidebar-popup.sidebar-menu-inner ul li {
+    width: 100px;
+}
 
+/* 隐藏侧边栏滚动条 */
+.sidebar-menu.flex-fill::-webkit-scrollbar {
+    display: none;
+}
 
+/* 左导航二级导航左侧间距 */
+.sidebar-menu-inner ul li ul li a {
+    margin-left: 25px;
+    border-radius: 8px; /* 菜单项圆角 */
+    margin-right: 10px;
+}
 
+/* ==========================================================================
+   颜色与背景 (Colors & Backgrounds)
+   ========================================================================== */
 
+/* 顶部导航栏 */
+.big-header-banner .page-header {
+    background: rgba(255, 255, 255, 0.95); /* 增加一点不透明度 */
+    backdrop-filter: blur(10px); /* 玻璃磨砂效果 */
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
 
+.big-header-banner:not(.header-bg) .page-header .navbar-nav > li > a,
+.big-header-banner:not(.header-bg) .navbar-menu a:not(.dropdown-item) {
+    color: #333 !important; /* 默认黑色，不再是白色 */
+    font-weight: 500;
+}
 
+/* 链接悬停颜色 - 现代蓝色 */
+a:hover, 
+.big-header-banner:not(.header-bg) .page-header .navbar-nav > li > a:hover {
+    color: #007AFF !important; 
+    text-decoration: none;
+}
 
+/* 主页搜索热词 */
+.search-hot-text {
+    border-radius: 0 0 16px 16px; /* 更大的圆角 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.02);
+}
 
+.search-hot-text ul li.current {
+    background: #f0f7ff;
+    color: #007AFF;
+}
 
+/* ==========================================================================
+   暗黑模式适配 (Dark Mode)
+   ========================================================================== */
 
+.io-black-mode .url-card {
+    background: #2b2b2b;
+    border-color: #333;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.io-black-mode .url-card .url-info strong {
+    color: #eee;
+}
+
+.io-black-mode .url-card .url-info p {
+    color: #aaa;
+}
+
+.io-black-mode .page-header {
+    background: rgba(30, 30, 30, 0.95);
+    border-bottom: 1px solid #333;
+}
+
+.io-black-mode .page-container .grid-bg {
+    background-image: none; /* 移除网格背景，保持干净 */
+    background-color: #1a1a1a;
+}
