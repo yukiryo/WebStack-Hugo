@@ -180,9 +180,35 @@ a {
 
 /* 隐藏天气和搜索等不需要的元素 */
 .weather,
-.go-search-btn,
-#hitokoto {
+.go-search-btn {
     display: none !important;
+}
+
+/* 一言样式 - 右侧显示 */
+#hitokoto {
+    display: flex !important;
+    align-items: center;
+    margin-left: auto;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#hitokoto::before {
+    content: '"';
+    margin-right: 4px;
+    color: #999;
+}
+
+#hitokoto::after {
+    content: '"';
+    margin-left: 4px;
+    color: #999;
 }
 
 /* ========== 主内容区域 ========== */
