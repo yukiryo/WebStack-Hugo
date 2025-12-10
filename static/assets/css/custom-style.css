@@ -97,9 +97,9 @@ h4.text-gray {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 
-    /* 直接给卡片加外边距，确保不贴在一起 */
-    margin: 15px !important;
-    /* 上下左右都加15px间距 */
+    /* 只保留上下间距，左右由栅格控制 */
+    margin: 20px 0 !important;
+    /* 上下20px，左右0 */
 
     padding: 15px !important;
     display: flex;
