@@ -189,25 +189,22 @@ h4.text-gray {
    ========================================================================== */
 
 .page-header {
-    background: rgba(255, 255, 255, 0.3) !important;
-    /* 更加透明 */
-    backdrop-filter: blur(10px);
-    box-shadow: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: #fff !important;
+    /* 纯白背景 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
-    border-radius: 0 0 24px 24px;
-    /* 底部圆角 */
 }
 
 /* 顶部链接 */
 .page-header .navbar-nav>li>a {
-    color: #fff !important;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: #333 !important;
+    /* 深色文字 */
     font-weight: 500;
 }
 
 .page-header .navbar-nav>li>a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 }
 
