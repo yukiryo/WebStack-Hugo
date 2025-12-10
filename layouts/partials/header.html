@@ -14,23 +14,23 @@
     <meta name="baidu-site-verification" content="{{ $.Site.Params.seo.baiduSiteVer }}" />
     {{ end }}
 
-    <link rel="stylesheet" id="iconfont-css" href="{{ absURL "assets/css/iconfont-3.03029.1.css" }}" type="text/css"
+    <link rel="stylesheet" id="iconfont-css" href="{{ absURL " assets/css/iconfont-3.03029.1.css" }}" type="text/css"
         media="all" />
-    <link rel="stylesheet" id="bootstrap-css" href="{{ absURL "assets/css/bootstrap.min-4.3.1.css" }}" type="text/css"
+    <link rel="stylesheet" id="bootstrap-css" href="{{ absURL " assets/css/bootstrap.min-4.3.1.css" }}" type="text/css"
         media="all" />
-    <link rel="stylesheet" id="fancybox-css" href="{{ absURL "assets/css/fancybox.min-3.5.7.css" }}" type="text/css"
+    <link rel="stylesheet" id="fancybox-css" href="{{ absURL " assets/css/fancybox.min-3.5.7.css" }}" type="text/css"
         media="all" />
-    <link rel="stylesheet" id="iowen-css" href="{{ absURL "assets/css/style-3.03029.1.css" }}" type="text/css"
+    <link rel="stylesheet" id="iowen-css" href="{{ absURL " assets/css/style-3.03029.1.css" }}" type="text/css"
         media="all" />
-    <link rel="stylesheet" id="custom-css" href="{{ absURL "assets/css/custom-style.css" }}" type="text/css"
+    <link rel="stylesheet" id="custom-css" href="{{ absURL " assets/css/custom-style.css" }}" type="text/css"
         media="all" />
-    <link rel="stylesheet" id="fortawesome-css" href="{{ absURL "assets/fontawesome-5.15.4/css/all.min.css" }}"
+    <link rel="stylesheet" id="fortawesome-css" href="{{ absURL " assets/fontawesome-5.15.4/css/all.min.css" }}"
         type="text/css" />
-    <script type="text/javascript" src="{{ absURL "assets/js/jquery.min-3.2.1.js" }}" id="jquery-js"></script>
-    <script type="text/javascript" src="{{ absURL "assets/js/content-search.js" }}" id="content-search-js"></script>
-    <!-- 百度统计 -->
+    <script type="text/javascript" src="{{ absURL " assets/js/jquery.min-3.2.1.js" }}" id="jquery-js"></script>
+
+    <!-- 鐧惧害缁熻 -->
     <script>
-        {{ with .Site.Params.seo.baiduhmid }}
+        { { with .Site.Params.seo.baiduhmid } }
         var _hmt = _hmt || [];
         (function () {
             var hm = document.createElement("script");
@@ -38,16 +38,16 @@
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
-        {{ end }}
+        { { end } }
     </script>
-    <!-- end 百度统计 -->
+    <!-- end 鐧惧害缁熻 -->
 
-    <!-- 51.LA 网站统计 -->
+    <!-- 51.LA 缃戠珯缁熻 -->
     {{ with .Site.Params.seo.tj51laid }}
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     <script>LA.init({ id: "{{ $.Site.Params.seo.tj51laid }}", ck: "{{ $.Site.Params.seo.tj51lack }}" })</script>
     {{ end }}
-    <!-- end 51.LA 网站统计 -->
+    <!-- end 51.LA 缃戠珯缁熻 -->
 
     <!-- Google AdSense -->
     {{ if .Site.Params.seo.GoogleAdsClient }}
@@ -59,8 +59,8 @@
 
     <!-- Fancybox -->
     {{if .Page.Site.Params.fancybox }}
-    <link rel="stylesheet" id="fancybox-css" href="{{ absURL "assets/css/fancybox.min-3.5.7.css" }}" />
-    <script type="text/javascript" id="fancybox-js" src="{{ absURL "assets/js/fancybox.min-3.5.7.js" }}"></script>
+    <link rel="stylesheet" id="fancybox-css" href="{{ absURL " assets/css/fancybox.min-3.5.7.css" }}" />
+    <script type="text/javascript" id="fancybox-js" src="{{ absURL " assets/js/fancybox.min-3.5.7.js" }}"></script>
     {{ end }}
     <!-- end Fancybox -->
 
