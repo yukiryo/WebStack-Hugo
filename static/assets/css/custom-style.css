@@ -85,37 +85,54 @@ h4.text-gray {
    ========================================================================== */
 
 
+/* 网址导航卡片 - 单层扁平化设计 */
 .url-card {
-    background: #ffffff !important;
-    /* 改回纯白背景 */
-    border: 1px solid rgba(0, 0, 0, 0.05) !important;
-    /* 极淡的实线边框 */
+    background: #fff !important;
+    /* 唯一的背景层 */
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
     border-radius: 12px !important;
-    /* 适中的圆角 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
-    /* 极简阴影，只有一层 */
-    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
     margin-bottom: 0 !important;
     height: 100%;
+
+    /* 将 padding 放在最外层，确保内部元素撑满或对齐 */
+    padding: 15px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.url-card .url-body {
-    background: transparent !important;
-    padding: 15px 10px !important;
-}
-
-.url-card a.card {
+/* 强制清除所有内部容器的样式，防止"叠层" */
+.url-card .url-body,
+.url-card .card,
+.url-card .card-body {
     background: transparent !important;
     border: none !important;
-    margin-bottom: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    /* 防止高度塌陷或过高 */
 }
 
-/* 悬停效果：轻微加深阴影，不再大幅度上浮 */
+/* 修复内容布局 */
+.url-card .url-content {
+    display: flex !important;
+    align-items: center !important;
+    width: 100%;
+}
+
+.url-card .url-img {
+    margin-right: 12px !important;
+    flex-shrink: 0;
+}
+
+/* 悬停效果：仅对外层容器生效 */
 .url-card:hover {
-    transform: translateY(-2px);
-    /* 仅轻微移动 */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
-    border-color: rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08) !important;
+    border-color: rgba(0, 0, 0, 0.05) !important;
     z-index: 2;
 }
 
