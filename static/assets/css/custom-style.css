@@ -13,8 +13,6 @@ html {
     background: #f5f6f7;
     min-height: 100vh;
 }
-}
-}
 
 /* 覆盖现有主要背景，让 body 背景透出来 */
 .page-container,
