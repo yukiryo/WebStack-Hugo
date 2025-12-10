@@ -68,12 +68,14 @@ h4.text-gray {
     opacity: 0.9;
 }
 
-/* 修复 Bootstrap row 的负边距带来的问题/* 卡片容器对齐 - 加大间距 */
+/* 修复间距不生效的问题：直接针对内容区的 row 生效 */
+.content-site .row,
 .row.io-mx-n2 {
     margin-left: -24px !important;
     margin-right: -24px !important;
 }
 
+.content-site .row>[class*='col-'],
 .row.io-mx-n2>[class*='col-'] {
     padding-left: 24px !important;
     padding-right: 24px !important;
