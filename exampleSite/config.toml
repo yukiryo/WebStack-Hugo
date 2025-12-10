@@ -12,8 +12,8 @@ publishDir            = "public"				# 站点静态文件保存目录
     author        = "雪凌Yukiryo"
     description   = "Webstack-Hugo 网址导航 | Hugo 主题 BY Bio IT 爱好者"
     upload        = "https://t.me/Yukiryo"      # 左侧导航栏的"网站提交"
-    about         = "https://github.com/shenweiyan/Knowledge-Garden/discussions/10"	          # 左侧导航栏的"关于导航"页面(./about)
-    repository    = "https://github.com/shenweiyan/WebStack-Hugo"  
+    about         = "https://github.com/yukiryo/WebStack-Hugo"	          # 左侧导航栏的"关于导航"页面(./about)
+    repository    = "https://github.com/yukiryo/WebStack-Hugo"  
     enablePreLoad = true					# 网站完全打开前预加载动画
     textPreLoad   = "Yukiryo 网址导航"				# 预加载的动画文字, 只有当enablePreLoad=true时生效
     expandSidebar = false					# 默认展开左侧边导航栏
@@ -46,4 +46,4 @@ publishDir            = "public"				# 站点静态文件保存目录
     unsafe = true
 
 [params.footer]
-    copyright = 'Yukiryo <br/>&copy; 2021 - {year} By [WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo) | [Bio IT 爱好者](https://github.com/bioitee/) | [粤ICP备16023717号](http://beian.miit.gov.cn/)<br/>'
+    copyright = '雪凌Yukiryo <br/>&copy; 2021 - {year} By [WebStack-Hugo](https://github.com/yukiryo/WebStack-Hugo) | [雪凌Yukiryo](https://github.com/yukiryo) | [粤ICP备16023717号](http://beian.miit.gov.cn/)<br/>'
