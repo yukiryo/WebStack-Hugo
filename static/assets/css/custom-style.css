@@ -84,21 +84,18 @@ h4.text-gray {
    GLASSMORPHISM CARDS (玻璃拟态卡片)
    ========================================================================== */
 
+
 .url-card {
-    background: rgba(255, 255, 255, 0.7) !important;
-    /* 半透明白底 */
-    backdrop-filter: blur(16px) !important;
-    /* 核心：背景模糊 */
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.5) !important;
-    /* 玻璃边缘高光 */
-    border-radius: 24px !important;
-    /* 超大圆角 */
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
-    /* 柔和投影 */
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    background: #ffffff !important;
+    /* 改回纯白背景 */
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    /* 极淡的实线边框 */
+    border-radius: 12px !important;
+    /* 适中的圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+    /* 极简阴影，只有一层 */
+    transition: all 0.3s ease !important;
     margin-bottom: 0 !important;
-    /* 由 col padding 控制 */
     height: 100%;
 }
 
@@ -113,13 +110,13 @@ h4.text-gray {
     margin-bottom: 0 !important;
 }
 
-/* 悬停效果：上浮 + 发光 */
+/* 悬停效果：轻微加深阴影，不再大幅度上浮 */
 .url-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    background: rgba(255, 255, 255, 0.9) !important;
-    box-shadow: 0 15px 40px 0 rgba(31, 38, 135, 0.25) !important;
-    border-color: #fff !important;
-    z-index: 10;
+    transform: translateY(-2px);
+    /* 仅轻微移动 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    z-index: 2;
 }
 
 /* 内容样式 */
