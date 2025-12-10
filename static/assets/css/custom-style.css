@@ -1,94 +1,84 @@
 /* ==========================================================================
-   RESET & BASE TYPOGRAPHY
+   现代简约风格 - 重新设计
    ========================================================================== */
-body,
-html {
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-    line-height: 1.6;
-    /* 简洁背景 */
-    background: #f5f6f7;
-    min-height: 100vh;
+
+/* ========== 基础样式 ========== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-/* 覆盖现有主要背景，让 body 背景透出来 */
+body,
+html {
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #1a1a1a;
+    line-height: 1.6;
+    background: #f8f9fa;
+    /* 非常浅的灰色背景 */
+}
+
+/* ========== 主内容区域 ========== */
 .page-container,
 .main-content {
     background: transparent !important;
 }
 
-/* ==========================================================================
-   LAYOUT & GRID (布局重构)
-   ========================================================================== */
-
-/* 主内容区域增加边距，营造悬浮感 */
 .main-content {
-    padding: 40px !important;
+    padding: 30px 40px !important;
 }
 
-/* 模块标题 */
-.io-title h4,
-.text-gray,
-h4.text-gray {
-    color: #333 !important;
-    /* 深色文字，浅色背景下可读 */
-    font-weight: 700 !important;
-    font-size: 1.5rem !important;
-    margin-bottom: 30px !important;
-    margin-top: 50px !important;
-    display: flex;
-    align-items: center;
+/* ========== 分类标题 ========== */
+h4.text-gray,
+.text-gray.text-lg {
+    color: #1a1a1a !important;
+    font-weight: 600 !important;
+    font-size: 1.25rem !important;
+    margin-bottom: 24px !important;
+    margin-top: 48px !important;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eaeaea;
 }
 
-/* 图标优化 */
+h4.text-gray:first-child {
+    margin-top: 0 !important;
+}
+
 .site-tag {
-    font-size: 1.8rem !important;
-    margin-right: 15px !important;
-    opacity: 0.9;
+    color: #666 !important;
+    margin-right: 10px !important;
 }
 
-/* 修复间距不生效的问题：直接针对内容区的 row 生效 */
-.content-site .row,
-.row.io-mx-n2 {
-    margin-left: -24px !important;
-    margin-right: -24px !important;
+/* ========== 卡片网格布局 ========== */
+.content-site .row {
+    margin-left: -12px !important;
+    margin-right: -12px !important;
 }
 
-.content-site .row>[class*='col-'],
-.row.io-mx-n2>[class*='col-'] {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+.content-site .row>[class*='col-'] {
+    padding: 12px !important;
 }
 
-/* 增加栅格间隙 */
-
-
-/* ==========================================================================
-   GLASSMORPHISM CARDS (玻璃拟态卡片)
-   ========================================================================== */
-
-
-/* 网址导航卡片 - 单层扁平化设计 */
+/* ========== 卡片样式 ========== */
 .url-card {
     background: #fff !important;
-    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #eaeaea !important;
     border-radius: 12px !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-
-    /* 平衡间距：上下20px，左右10px */
-    margin: 20px 10px !important;
-
-    padding: 15px !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.2s ease !important;
+    height: 100%;
+    overflow: hidden;
 }
 
-/* 强制清除所有内部容器的样式，防止"叠层" */
+.url-card:hover {
+    border-color: #d0d0d0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    transform: translateY(-2px);
+}
+
+/* 清除内部容器样式 */
 .url-card .url-body,
 .url-card .card,
 .url-card .card-body {
@@ -97,149 +87,160 @@ h4.text-gray {
     box-shadow: none !important;
     margin: 0 !important;
     padding: 0 !important;
-    min-height: 0 !important;
-    /* 防止高度塌陷或过高 */
 }
 
-/* 修复内容布局 */
+.url-card .url-body {
+    padding: 16px !important;
+}
+
+/* 卡片内容布局 */
 .url-card .url-content {
     display: flex !important;
     align-items: center !important;
-    width: 100%;
 }
 
 .url-card .url-img {
-    margin-right: 12px !important;
     flex-shrink: 0;
+    margin-right: 14px !important;
 }
 
-/* 悬停效果：仅对外层容器生效 */
-.url-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08) !important;
-    border-color: rgba(0, 0, 0, 0.05) !important;
-    z-index: 2;
+.url-card .url-img img {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 10px !important;
+    object-fit: cover;
 }
 
-/* 内容样式 */
-.url-card strong {
-    color: #2c3e50;
-    font-size: 1.1rem;
-    font-weight: 700;
+.url-card .url-info strong {
+    color: #1a1a1a;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
 }
 
-.url-card p.text-muted {
-    color: #5d6d7e !important;
-    font-size: 0.9rem;
-    margin-top: 8px;
+.url-card .url-info p,
+.url-card .text-muted {
+    color: #666 !important;
+    font-size: 0.85rem;
+    margin: 0 !important;
+    line-height: 1.4;
 }
 
-/* 图标样式 */
-.url-img img {
-    border-radius: 16px !important;
-    /* 图标圆角 */
-    width: 48px !important;
-    height: 48px !important;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+/* 直达按钮 */
+.url-card .togo {
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
-.url-card:hover .url-img img {
-    transform: rotate(10deg);
-    /* 趣味动效 */
+.url-card:hover .togo {
+    opacity: 1;
 }
 
-/* ==========================================================================
-   SIDEBAR (侧边栏悬浮)
-   ========================================================================== */
-
+/* ========== 侧边栏 ========== */
 .sidebar-menu {
-    background: rgba(255, 255, 255, 0.6) !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.05);
+    background: #fff !important;
+    border-right: 1px solid #eaeaea !important;
 }
 
 .sidebar-menu-inner a {
-    color: #4a5568 !important;
+    color: #444 !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 10px 16px !important;
+    border-radius: 8px;
+    margin: 2px 8px;
+    transition: all 0.15s ease;
+}
+
+.sidebar-menu-inner a:hover {
+    background: #f5f5f5 !important;
+    color: #1a1a1a !important;
+}
+
+.sidebar-menu-inner li.active>a {
+    background: #f0f0f0 !important;
+    color: #1a1a1a !important;
     font-weight: 600;
-    transition: all 0.2s;
 }
 
-/* 激活状态和悬停 */
-.sidebar-menu-inner li.active>a,
-.sidebar-menu-inner li>a:hover {
-    background: rgba(255, 255, 255, 0.8) !important;
-    color: #007AFF !important;
-    /* 苹果蓝 */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transform: translateX(5px);
-}
-
-/* Logo 区域 */
 .logo-site {
     background: transparent !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 16px !important;
 }
 
-/* ==========================================================================
-   HEADER & NAVBAR (顶部导航)
-   ========================================================================== */
-
+/* ========== 顶部导航栏 ========== */
 .page-header {
     background: #fff !important;
-    /* 纯白背景 */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea !important;
+    box-shadow: none !important;
 }
 
-/* 顶部链接 */
 .page-header .navbar-nav>li>a {
-    color: #333 !important;
-    /* 深色文字 */
+    color: #444 !important;
     font-weight: 500;
+    font-size: 0.9rem;
+    padding: 8px 16px !important;
+    border-radius: 6px;
+    transition: background 0.15s;
 }
 
 .page-header .navbar-nav>li>a:hover {
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
+    background: #f5f5f5 !important;
+    color: #1a1a1a !important;
 }
 
-/* ==========================================================================
-   DARK MOOD & UTILS (其他)
-   ========================================================================== */
-
-/* 隐藏原来的搜索背景图，我们用全局渐变替代了 */
-#search-bg {
-    background: transparent !important;
-    height: auto !important;
-    padding: 0 !important;
-}
-
-/* 隐藏不必要的元素 */
+/* ========== 页脚 ========== */
 .main-footer {
-    background: rgba(0, 0, 0, 0.2) !important;
-    backdrop-filter: blur(5px);
-    color: rgba(255, 255, 255, 0.8);
-    border-top: none;
+    background: #fff !important;
+    border-top: 1px solid #eaeaea;
+    color: #666;
     margin-top: 60px;
 }
 
-/* 移动端适配调整 */
+.main-footer a {
+    color: #0066cc;
+}
+
+.main-footer a:hover {
+    color: #004499;
+}
+
+/* ========== 友情链接 ========== */
+.friendlink.card {
+    background: #fff !important;
+    border: 1px solid #eaeaea !important;
+    border-radius: 12px !important;
+}
+
+.friendlink a {
+    color: #666;
+    margin-right: 16px;
+    transition: color 0.15s;
+}
+
+.friendlink a:hover {
+    color: #0066cc;
+}
+
+/* ========== 响应式调整 ========== */
 @media (max-width: 768px) {
     .main-content {
         padding: 20px !important;
     }
 
-    .url-card {
-        border-radius: 18px !important;
+    h4.text-gray {
+        font-size: 1.1rem !important;
+        margin-top: 32px !important;
     }
 
-    .site-tag {
-        /* 移动端减小标题 */
-        font-size: 1.4rem !important;
+    .url-card .url-body {
+        padding: 14px !important;
+    }
+
+    .url-card .url-img img {
+        width: 40px !important;
+        height: 40px !important;
     }
 }
