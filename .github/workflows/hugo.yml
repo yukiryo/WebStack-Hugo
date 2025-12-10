@@ -25,22 +25,12 @@ jobs:
           pwd
           ls
           cp -R exampleSite/* .
-          hugo --themesDir ../ --baseURL https://webstack-hugo.weiyan.cc/
+          hugo --themesDir ../ --baseURL https://yukiryo.github.io/WebStack-Hugo/
           
       - name: Deploy Pages
         uses: peaceiris/actions-gh-pages@v3	  # 一个自动发布 github pages 的 action
         with:
-          external_repository: shenweiyan/WebStack-Hugo	  # 发布到哪个 repo
-          personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}	# 发布到其他 repo 需要在对应的 repo 上粘贴生成的 personal_access_token
-          #1. 创建 Personal_Access_Token：
-          #   GitHub 个人账号 -> Settings -> Developer settings -> Personal access tokens ->  Tokens (classic) -> New personal access token (classic)
-          #   - Expiration: No expiration
-          #   - Select scopes: 全选
-          #2. 粘贴 Personal_Access_Token：
-          #   进入目标 repo -> Settings -> Security -> Secrets and variables -> Actions，选择 New repository secret -> 粘贴前面生成的 personal_access_token
-          publish_dir: ./public	
-          #注意这里指的是 Pages 要发布哪个文件夹的内容，而不是指发布到目标仓库的什么位置；因为 hugo 默认生成静态网页到 public 文件夹，所以这里发布 public 文件夹里的内容。
-          publish_branch: gh-pages	# 发布到哪个 branch
-          force_orphan: true
-          cname: webstack-hugo.weiyan.cc
+          # external_repository: shenweiyan/WebStack-Hugo  # 默认发布到当前 repo
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 使用 GitHub 自动提供的 Token
+          # cname: webstack-hugo.weiyan.cc # 移除 CNAME，除非你有自定义域名
           full_commit_message: ${{ github.event.head_commit.message }}
