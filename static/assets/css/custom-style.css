@@ -68,15 +68,18 @@ h4.text-gray {
     opacity: 0.9;
 }
 
-/* 修复 Bootstrap row 的负边距带来的问题 */
-.row {
-    margin-left: -15px !important;
-    margin-right: -15px !important;
+/* 修复 Bootstrap row 的负边距带来的问题/* 卡片容器对齐 - 加大间距 */
+.row.io-mx-n2 {
+    margin-left: -24px !important;
+    margin-right: -24px !important;
 }
 
-[class*='col-'] {
-    padding: 15px !important;
-    /* 增加栅格间隙 */
+.row.io-mx-n2>[class*='col-'] {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+/* 增加栅格间隙 */
 }
 
 
@@ -93,7 +96,8 @@ h4.text-gray {
     border-radius: 12px !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 40px !important;
+    /* 进一步增加垂直间距 */
     height: 100%;
 
     /* 将 padding 放在最外层，确保内部元素撑满或对齐 */
