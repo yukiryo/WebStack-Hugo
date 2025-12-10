@@ -67,48 +67,122 @@ a {
     flex: none !important;
 }
 
-/* ========== 顶部导航栏 - 全新设计 ========== */
+/* ========== 顶部导航栏 - 全新布局 ========== */
 .page-header {
     position: sticky !important;
     top: 0;
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    z-index: 1000;
+    background: #fff !important;
     border: none !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
-    box-shadow: none !important;
-    padding: 0 40px !important;
+    border-bottom: 1px solid #eee !important;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04) !important;
+    padding: 0 !important;
 }
 
-.page-header .navbar-nav {
-    display: flex;
-    gap: 8px;
+.page-header .navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 12px 40px;
 }
 
-.page-header .navbar-nav>li>a {
-    color: var(--text-primary) !important;
-    font-weight: 500;
-    font-size: 0.95rem;
-    padding: 8px 16px !important;
-    border-radius: 20px;
-    transition: var(--transition);
-}
-
-.page-header .navbar-nav>li>a:hover {
-    background: var(--bg-secondary) !important;
+.page-header .container-fluid {
+    padding: 0 !important;
 }
 
 /* Logo */
-.logo-site {
-    background: transparent !important;
-    border: none !important;
-}
-
-.logo-site .logo-text {
-    font-size: 1.5rem !important;
+.page-header .navbar-brand {
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--text-primary) !important;
+    margin-right: 40px;
+}
+
+.page-header .navbar-brand img {
+    height: 36px;
+    width: auto;
+}
+
+/* 导航菜单 */
+.page-header .navbar-nav {
+    display: flex !important;
+    align-items: center;
+    gap: 4px;
+    margin: 0 !important;
+}
+
+.page-header .navbar-nav>li {
+    list-style: none;
+}
+
+.page-header .navbar-nav>li>a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #444 !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 10px 16px !important;
+    border-radius: 8px;
+    transition: all 0.15s ease;
+    text-decoration: none !important;
+}
+
+.page-header .navbar-nav>li>a:hover {
+    background: #f5f5f5 !important;
+    color: #1a1a1a !important;
+}
+
+.page-header .navbar-nav>li>a i {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* 隐藏子菜单箭头 */
+.page-header .menu-item-has-children::after {
+    display: none !important;
+}
+
+/* 子菜单 */
+.page-header .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+    padding: 8px;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+}
+
+.page-header .menu-item-has-children:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.page-header .sub-menu li a {
+    display: block;
+    padding: 10px 16px;
+    color: #444;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.15s;
+}
+
+.page-header .sub-menu li a:hover {
+    background: #f5f5f5;
+    color: #1a1a1a;
+}
+
+/* 隐藏天气和搜索等不需要的元素 */
+.weather,
+.go-search-btn,
+#hitokoto {
+    display: none !important;
 }
 
 /* ========== 主内容区域 ========== */
