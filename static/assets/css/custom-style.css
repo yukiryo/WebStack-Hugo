@@ -92,16 +92,15 @@ h4.text-gray {
 /* 网址导航卡片 - 单层扁平化设计 */
 .url-card {
     background: #fff !important;
-    /* 唯一的背景层 */
-    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
     border-radius: 12px !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    margin-bottom: 40px !important;
-    /* 进一步增加垂直间距 */
-    height: 100%;
 
-    /* 将 padding 放在最外层，确保内部元素撑满或对齐 */
+    /* 直接给卡片加外边距，确保不贴在一起 */
+    margin: 15px !important;
+    /* 上下左右都加15px间距 */
+
     padding: 15px !important;
     display: flex;
     flex-direction: column;
